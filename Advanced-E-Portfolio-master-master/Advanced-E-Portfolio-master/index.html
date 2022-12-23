@@ -21,7 +21,7 @@
 	</script>
 	</head>
 	<body>
-		<section id="landing-page" onmousemove="moveBackground(event)">
+		<section id="landing-page" >
 			<nav>
 				<figure>
 					<img id="personal-logo" src="./assets/personal-logo-nic.jpg" alt="" />
@@ -160,19 +160,20 @@
 					<h4 class="modal__sub-title modal__sub-title--contact">
 						I'm currently open to new opportunities.
 					</h4>
-					<form id="contact__form" onsubmit="contact(event)">
+					<form id="contact__form" onSubmit="contact(event)">
 						<div class="form__item">
 							<label class="form__item--label">name</label>
-							<input class="input"  name="user_name" type="text" ></input>
+							<input class="input" id="name" name="user_name" type="text" ></input>
 						</div>
 						<div class="form__item">
 							<label class="form__item--label">Email</label>
-							<input class="input" name="user_email" type="email" ></input>
+							<input class="input" id="email" name="user_email" type="email" ></input>
 						</div>
 						<div class="form__item">
 							<label class="form__item--label">Message</label>
 							<textarea
 								class="input"
+								id="message"
 								name="message"
 								type="text"
 								
